@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTP – TELUS Health</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>GTP – Global Team Plans</h1>
+        <p>Official Reseller of TELUS Health EAP</p>
+    </header>
+
+    <section>
+        <h2>About TELUS Health</h2>
+        <p>TELUS Health is a global leader in Employee Assistance Programmes (EAP), trusted by over 35 million users worldwide in more than 180 countries and 50+ languages. Their services include 24/7 counselling, mental health tools, legal and financial assistance, and workplace wellbeing analytics.</p>
+    </section>
+
+    <section>
+        <h2>What We Offer</h2>
+        <ul>
+            <li>24/7/365 Counselling Support</li>
+            <li>Structured Sessions (3–12 annually)</li>
+            <li>CareNow Digital CBT Programmes</li>
+            <li>Wellbeing Index for Workforce Insights</li>
+            <li>Legal, Financial, and Family Support</li>
+            <li>Workshops and Crisis Management</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Pricing</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Package</th>
+                    <th>UK Only</th>
+                    <th>Global</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Level 1 – 3 Sessions</td>
+                    <td>£4.50 PEPY</td>
+                    <td>£10.00 PEPY</td>
+                </tr>
+                <tr>
+                    <td>Level 2 – 10–12 Sessions</td>
+                    <td>£6.60 PEPY</td>
+                    <td>£17.00 PEPY</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>Contact: info@gptglobalteamplans.com</p>
+        <p>&copy; 2025 GTP – Global Team Plans</p>
+    </footer>
+</body>
+</html>
