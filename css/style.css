@@ -150,3 +150,8 @@ footer {
   margin:0.75rem 0 0;
   line-height:1.5;
 }
+/* ===== Accent colour for section headings ===== */
+h2{
+  color:#5a2ca0;        /* GTP purple */
+}
+
