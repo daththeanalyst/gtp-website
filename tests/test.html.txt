@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infographic Demo</title>
+
+<!-- Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+/* ---- colour palette ---- */
+:root{
+  --accent:#5a2ca0;        /* purple */
+  --accent-light:#f4f0ff;  /* pale lavender */
+  --leaf-green:#5faa45;    /* donut wedge */
+  --body:#333;
+  --card-shadow:0 1px 6px rgba(0,0,0,0.07);
+  --radius:8px;
+  font-family:Arial, sans-serif;
+  color:var(--body);
+}
+
+/* ---- generic ---- */
+body{margin:0;padding:2rem;background:#f7f9fc;line-height:1.55;}
+h2,h3{margin:0;}
+h2{font-size:2rem;color:var(--accent);}
+p{margin:1rem 0;}
+section{margin:2rem auto;max-width:1100px;}
+
+/* ---- donut chart ---- */
+.donut{
+  position:relative;width:120px;height:120px;margin:auto;
+}
+.donut svg{transform:rotate(-90deg);}
+.donut circle.bg{stroke:#e6e6e6;}
+.donut circle.fg{stroke:var(--leaf-green);stroke-dasharray:50 100;}
+
+/* ---- impact block ---- */
+.info-block{
+  background:var(--accent-light);
+  padding:2.5rem 1.5rem;
+  border-radius:var(--radius);
+}
+.icon-list{display:flex;flex-direction:column;gap:1.6rem;margin-top:2rem;}
+.icon-row{display:flex;gap:1rem;align-items:flex-start;}
+.icon-row i{color:var(--accent);font-size:1.4rem;flex:0 0 24px;}
+.card{background:#fff;padding:2rem;border-radius:var(--radius);
+      box-shadow:var(--card-shadow);}
+
+/* ---- highlight cards ---- */
+.highlight-cards{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem;}
+.highlight-card{flex:1 1 180px;background:#fff;border-radius:var(--radius);
+                box-shadow:var(--card-shadow);text-align:center;padding:1.25rem 1rem;}
+.highlight-card h3{color:var(--accent);font-size:1.9rem;margin:0;}
+.highlight-card p{margin:0.3rem 0 0;}
+
+/* ---- responsive ---- */
+@media(max-width:900px){
+  .flex-wrap{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============== IMPACT BLOCK ============== -->
+<section class="info-block">
+  <div class="flex-wrap" style="display:flex;gap:2rem;align-items:center;">
+
+    <!-- Left column -->
+    <div style="flex:1 1 320px;min-width:260px;">
+      <!-- donut -->
+      <div class="donut">
+        <svg viewBox="0 0 36 36">
+          <circle class="bg" cx="18" cy="18" r="16" fill="none" stroke-width="4"/>
+          <circle class="fg" cx="18" cy="18" r="16" fill="none" stroke-width="4"/>
+        </svg>
+        <span style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);
+                     font-size:1.6rem;font-weight:700;color:var(--accent);">50%</span>
+      </div>
+      <p style="text-align:center;margin-top:0.6rem;">
+        <strong>reduction</strong> in poor mental-health ratings after clinical support
+      </p>
+
+      <!-- bullet list -->
+      <div class="icon-list">
+        <div class="icon-row">
+          <i class="fa-solid fa-comments"></i>
+          <div><strong>Short-term counselling</strong><br>Virtual, phone or in-person.</div>
+        </div>
+        <div class="icon-row">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <div><strong>Standard wellness features</strong><br>Newsfeed, wellbeing articles, self-directed programmes.</div>
+        </div>
+        <div class="icon-row">
+          <i class="fa-solid fa-briefcase-medical"></i>
+          <div><strong>Work–life solutions</strong><br>Legal, financial, nutritional and family support.</div>
+        </div>
+        <div class="icon-row">
+          <i class="fa-solid fa-phone-volume"></i>
+          <div><strong>24 / 7 crisis support</strong><br>Immediate help during critical incidents.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div class="card" style="flex:1 1 260px;min-width:240px;">
+      <h3 style="color:var(--accent);margin-bottom:1rem;">Reporting &amp; insights</h3>
+      <p><strong>Utilisation &amp; participation reports</strong><br>
+         Real-time metrics &amp; ROI dashboards.</p>
+      <p><strong>Total Wellbeing Index</strong><br>
+         Measures strengths &amp; risks across four wellbeing pillars.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== GLOBAL REACH BLOCK ============== -->
+<section class="info-block" style="text-align:center;">
+  <h2 class="stat-num" style="font-size:3.2rem;color:var(--accent);margin-top:0;">180+ countries</h2>
+  <p style="font-size:1.2rem;margin-top:0;">covered by our Global EAP</p>
+
+  <!-- world map placeholder (use your own image) -->
+  <img src="https://via.placeholder.com/600x250/efefef/666?text=World+Map"
+       alt="Global coverage map"
+       style="max-width:550px;width:80%;margin:2rem auto 1rem;display:block;">
+
+  <!-- highlight cards -->
+  <div class="highlight-cards">
+    <div class="highlight-card">
+      <h3>90K+</h3><p>clinicians worldwide</p>
+    </div>
+    <div class="highlight-card">
+      <h3>35M+</h3><p>users trust the service</p>
+    </div>
+    <div class="highlight-card">
+      <h3>50+</h3><p>supported languages</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
